@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>裁判所判例</title>
   <style>
+    html {
+      scroll-behavior: smooth; /* 🔥 スムーススクロール */
+    }
+
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
@@ -40,9 +44,17 @@
       margin-top: 1em;
     }
 
+    nav summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #004080;
+    }
+
     nav ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
 
     nav li {
@@ -71,28 +83,12 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    h2 {
-      color: #004080;
-      margin-left: 0;
-    }
+    h2 { color: #004080; margin-left: 0; }
+    h3 { color: #004080; margin-left: 1em; }
+    h4 { color: #004080; margin-left: 2em; }
+    p   { margin-left: 2em; }
 
-    h3 {
-      color: #004080;
-      margin-left: 1em;
-    }
-
-    h4 {
-      color: #004080;
-      margin-left: 2em;
-    }
-
-    p {
-      margin-left: 2em;
-    }
-
-    .section {
-      margin-top: 1.5em;
-    }
+    .section { margin-top: 1.5em; }
 
     .parties {
       background-color: #eef3fa;
@@ -101,36 +97,18 @@
       margin-bottom: 1.5em;
     }
 
-    .parties h2 {
-      margin-top: 0;
-    }
+    .parties h2 { margin-top: 0; }
+    .parties p  { margin-left: 1em; }
 
-    .parties p {
-      margin-left: 1em;
-    }
-
-    /* 第一部だけ明朝体にする */
     .original {
       font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 0.5em;
-        font-size: 14px;
-      }
-
-      p {
-        margin-left: 1em;
-      }
-
-      h3 {
-        margin-left: 0.5em;
-      }
-
-      h4 {
-        margin-left: 1em;
-      }
+      body { padding: 0.5em; font-size: 14px; }
+      p    { margin-left: 1em; }
+      h3   { margin-left: 0.5em; }
+      h4   { margin-left: 1em; }
     }
   </style>
 </head>
@@ -141,56 +119,58 @@
     <p>平成30年（オ）第1234号</p>
   </header>
 
-  <!-- ✅ 階層型目次 -->
+  <!-- ✅ 開閉式目次 -->
   <nav>
-    <h2>目次</h2>
-    <ul>
-      <li><a href="#parties">当事者・審級情報</a></li>
-      <li><a href="#part1">第一部 原文</a>
-        <ul>
-          <li><a href="#p1-judge">判示事項</a></li>
-          <li><a href="#p1-summary">判決要旨</a></li>
-          <li><a href="#p1-facts">事実</a></li>
-          <li><a href="#p1-disposition">主文</a></li>
-          <li><a href="#p1-reason">理由</a></li>
-          <li><a href="#p1-first">第一審判決</a>
-            <ul>
-              <li><a href="#p1-first-disposition">主文</a></li>
-              <li><a href="#p1-first-facts">事実</a></li>
-            </ul>
-          </li>
-          <li><a href="#p1-second">第二審判決</a>
-            <ul>
-              <li><a href="#p1-second-disposition">主文</a></li>
-              <li><a href="#p1-second-facts">事実</a></li>
-              <li><a href="#p1-second-reason">理由</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#part2">第二部 現代文</a>
-        <ul>
-          <li><a href="#p2-judge">判示事項</a></li>
-          <li><a href="#p2-summary">判決要旨</a></li>
-          <li><a href="#p2-facts">事実</a></li>
-          <li><a href="#p2-disposition">主文</a></li>
-          <li><a href="#p2-reason">理由</a></li>
-          <li><a href="#p2-first">第一審判決</a>
-            <ul>
-              <li><a href="#p2-first-disposition">主文</a></li>
-              <li><a href="#p2-first-facts">事実</a></li>
-            </ul>
-          </li>
-          <li><a href="#p2-second">第二審判決</a>
-            <ul>
-              <li><a href="#p2-second-disposition">主文</a></li>
-              <li><a href="#p2-second-facts">事実</a></li>
-              <li><a href="#p2-second-reason">理由</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <details open>
+      <summary>目次（クリックで開閉）</summary>
+      <ul>
+        <li><a href="#parties">当事者・審級情報</a></li>
+        <li><a href="#part1">第一部 原文</a>
+          <ul>
+            <li><a href="#p1-judge">判示事項</a></li>
+            <li><a href="#p1-summary">判決要旨</a></li>
+            <li><a href="#p1-facts">事実</a></li>
+            <li><a href="#p1-disposition">主文</a></li>
+            <li><a href="#p1-reason">理由</a></li>
+            <li><a href="#p1-first">第一審判決</a>
+              <ul>
+                <li><a href="#p1-first-disposition">主文</a></li>
+                <li><a href="#p1-first-facts">事実</a></li>
+              </ul>
+            </li>
+            <li><a href="#p1-second">第二審判決</a>
+              <ul>
+                <li><a href="#p1-second-disposition">主文</a></li>
+                <li><a href="#p1-second-facts">事実</a></li>
+                <li><a href="#p1-second-reason">理由</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#part2">第二部 現代文</a>
+          <ul>
+            <li><a href="#p2-judge">判示事項</a></li>
+            <li><a href="#p2-summary">判決要旨</a></li>
+            <li><a href="#p2-facts">事実</a></li>
+            <li><a href="#p2-disposition">主文</a></li>
+            <li><a href="#p2-reason">理由</a></li>
+            <li><a href="#p2-first">第一審判決</a>
+              <ul>
+                <li><a href="#p2-first-disposition">主文</a></li>
+                <li><a href="#p2-first-facts">事実</a></li>
+              </ul>
+            </li>
+            <li><a href="#p2-second">第二審判決</a>
+              <ul>
+                <li><a href="#p2-second-disposition">主文</a></li>
+                <li><a href="#p2-second-facts">事実</a></li>
+                <li><a href="#p2-second-reason">理由</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </details>
   </nav>
 
   <article>
@@ -208,7 +188,7 @@
       <p><strong>【第二審】</strong> 静岡地方裁判所</p>
     </div>
 
-    <!-- 第一部：原文 -->
+    <!-- 第一部 -->
     <div class="section original" id="part1">
       <h2>第一部 原文（漢字カナ書き下し文）</h2>
 
@@ -245,7 +225,7 @@
       <p>控訴ノ理由ニ付キ審考スルニ、第一ニ...</p>
     </div>
 
-    <!-- 第二部：現代文 -->
+    <!-- 第二部 -->
     <div class="section" id="part2">
       <h2>第二部 現代文</h2>
 
