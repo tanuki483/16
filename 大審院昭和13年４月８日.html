@@ -43,35 +43,55 @@
 
     h2 {
       color: #004080;
-      margin-left: 0; /* 最上位はインデントなし */
+      margin-left: 0;
     }
 
     h3 {
       color: #004080;
-      margin-left: 1em; /* 少し右へ */
+      margin-left: 1em;
     }
 
     h4 {
       color: #004080;
-      margin-left: 2em; /* さらに右へ */
+      margin-left: 2em;
     }
 
     p {
-      margin-left: 2em; /* 本文はさらに右へ */
+      margin-left: 2em;
     }
 
     .section {
       margin-top: 1.5em;
     }
 
+    .parties {
+      background-color: #eef3fa;
+      padding: 1em;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+    }
+
+    .parties h2 {
+      margin-top: 0;
+    }
+
+    .parties p {
+      margin-left: 1em;
+    }
+
+    /* 第一部だけ明朝体にする */
+    .original {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
+    }
+
     @media (max-width: 600px) {
       body {
         padding: 0.5em;
-        font-size: 14px; /* スマホ時は少し小さく */
+        font-size: 14px;
       }
 
       p {
-        margin-left: 1em; /* スマホはインデントを少し浅く */
+        margin-left: 1em;
       }
 
       h3 {
@@ -93,8 +113,21 @@
 
   <article>
 
+    <!-- ✅ 当事者・審級情報 -->
+    <div class="parties">
+      <h2>当事者・審級情報</h2>
+      <p><strong>【上告人】</strong> 控訴人 被告 瀧本熊太郎<br>
+         訴訟代理人 白石信明、松山全一</p>
+
+      <p><strong>【被上告人】</strong> 被控訴人 原告 佐野七太郎<br>
+         訴訟代理人 村瀬憲之助</p>
+
+      <p><strong>【第一審】</strong> 吉原區裁判所</p>
+      <p><strong>【第二審】</strong> 静岡地方裁判所</p>
+    </div>
+
     <!-- 第一部：原文 -->
-    <div class="section">
+    <div class="section original">
       <h2>第一部 原文（漢字カナ書き下し文）</h2>
 
       <h3>判示事項</h3>
