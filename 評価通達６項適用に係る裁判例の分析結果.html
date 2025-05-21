@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>評価通達６項適用に係る裁判例の分析結果</title>
+  <title>金額【評価通達６項適用に係る裁判例の分析結果】の金額</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -39,7 +39,11 @@
     }
 
     td.price {
-      text-align: right; /* 右2列は右詰め */
+      text-align: right; /* 右3列は右詰め */
+    }
+
+    td.bikou {
+      text-align: left; /* 右1列は左詰め */
     }
 
     td[colspan="1"][rowspan="2"] {
@@ -60,8 +64,12 @@
 <body>
 
 
-  <h1>評価通達６項適用に係る裁判例の分析結果</h1>
-
+  <h1>【評価通達６項適用に係る裁判例の分析結果】の金額</h1>
+　税大論叢「財産評価基本通達の定めによらない財産について」でまとめられている事案の申告額・更正額のまとめです。<br>
+　納税者の最後の申告と課税庁の最後の更正処分の差額です。<br>
+　詳細な金額が不明なものが多く、可能な限りで金額を推定して計算しています。<br>
+　贈与税の金額は各受贈者の合計を記載しています。<br>
+　また、人数について、相続税は相続人の人数、贈与税は受贈者の人数を記載しています。
   <div class="table-container">
     <table>
       <thead>
@@ -76,24 +84,15 @@
           <th>判決</th>
           <th>課税価格差額</th>
           <th>税額差額</th>
+          <th>加算税額</th>
+          <th>税目</th>
+          <th>備考</th>
         </tr>
       </thead>
       <tbody>
         <!-- データ例 -->
         <tr>
-          <td>【1】</td>
-          <td>H18.7.14</td>
-          <td>大阪地裁</td>
-          <td>株式等</td>
-          <td>評価通達</td>
-          <td>評価通達以外</td>
-          <td>評価通達以外</td>
-          <td>一部認容</td>
-          <td>千円</td>
-          <td>千円</td>
-        </tr>
-        <tr>
-          <td>【2】</td>
+          <td class="bikou">【１】TKC</td>
           <td>H16.8.27</td>
           <td>大阪地裁</td>
           <td>株式等</td>
@@ -101,23 +100,44 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>一部認容</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">487,550千円/2人</td>
+          <td class="price">324,592千円/2人</td>
+          <td class="price">48,572千円/2人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【3】</td>
-          <td>H14.7.11</td>
-          <td>地裁</td>
+          <td class="bikou">【２】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=014987">H16.8.27</a></td>
+          <td>大阪地裁</td>
+          <td>株式等</td>
+          <td>評価通達</td>
+          <td>評価通達以外</td>
+          <td>評価通達以外</td>
+          <td>一部認容</td>
+          <td>贈与</td>
+          <td class="price">199,658千円/2人</td>
+          <td class="price">97,908千円/2人</td>
+          <td class="price">18,463千円/2人</td>
+          <td class="bikou"></td>
+        </tr>
+        <tr>
+          <td class="bikou">【３】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15336">H14.7.11</a></td>
+          <td>東京地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達</td>
           <td>敗訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">248,592千円/1人</td>
+          <td class="price">138,159千円/1人</td>
+          <td class="price">13,816千円/1人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【4】</td>
+          <td class="bikou">【４】TKC</td>
           <td>H16.3.2</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -125,11 +145,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">9,134,143千円/4人</td>
+          <td class="price">1,214,460千円/4人</td>
+          <td class="price">179,842千円/4人</td>
+          <td class="bikou">非公表裁決により取り消された部分があり、一部金額不明。単位は誤っていない。</td>
         </tr>
         <tr>
-          <td>【5】</td>
+          <td class="bikou">【５】TKC</td>
           <td>H15.7.30</td>
           <td>大阪地裁</td>
           <td>株式等</td>
@@ -137,23 +160,29 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">822,635千円/2人</td>
+          <td class="price">197,693千円/2人</td>
+          <td class="price">不明 千円/2人</td>
+          <td class="bikou">措法64条も使っている。申告額不明につき納税者請求額と課税庁主張の差額。</td>
         </tr>
         <tr>
-          <td>【6】</td>
-          <td>H16.8.30</td>
+          <td class="bikou">【６】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail4?id=7532">H16.8.30</a></td>
           <td>名古屋地裁</td>
           <td>土地</td>
+          <td>評価通達以外</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
-          <td>評価通達以外</td>
           <td>敗訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">41,128千円/3人</td>
+          <td class="price">14,395千円/3人</td>
+          <td class="price">1,440千円/3人</td>
+          <td class="bikou">金額は推定。６項適用事案と分類してよいのか不明。裁判所全文参照。</td>
         </tr>
         <tr>
-          <td>【7】</td>
+          <td class="bikou">【７】TKC</td>
           <td>H16.5.25</td>
           <td>神戸地裁</td>
           <td>株式等</td>
@@ -161,12 +190,15 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">▲42,624千円/1人</td>
+          <td class="price">32,493千円/1人</td>
+          <td class="price">3,353千円/1人</td>
+          <td class="bikou">何が起きたかよく分からないが当初申告の税額が異様に低く、<br>更正により税額が増えているのに課税価格が減少している。</td>
         </tr>
         <!-- 通し番号8用の2行スペース -->
         <tr>
-          <td rowspan="2">【8】</td>
+          <td rowspan="2" class="bikou">【８】TKC</td>
           <td rowspan="2">H15.8.28</td>
           <td rowspan="2">東京地裁</td>
           <td rowspan="2">土地</td>
@@ -174,12 +206,15 @@
           <td rowspan="2">第１：評価通達<br>第２：通達以外</td>
           <td rowspan="2">第１：評価通達<br>第２：通達以外</td>
           <td rowspan="2">勝訴</td>
-          <td rowspan="2">千円</td>
-          <td rowspan="2">千円</td>
+          <td rowspan="2">相続</td>
+          <td rowspan="2" class="price">84,070千円/5人</td>
+          <td rowspan="2" class="price">50,442千円/5人</td>
+          <td rowspan="2" class="price">7,324千円/5人</td>
+          <td class="bikou">修正申告額不明につき課税価格は税率割戻により推定。</td>
         </tr>
         <tr></tr>
         <tr>
-          <td>【9】</td>
+          <td class="bikou">【９】TKC</td>
           <td>H16.3.17</td>
           <td>横浜地裁</td>
           <td>株式等</td>
@@ -187,11 +222,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>敗訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">4,409,057千円/1人</td>
+          <td class="price">3,077,985千円/1人</td>
+          <td class="price">461,697千円/1人</td>
+          <td class="bikou">無申告に相法７みなし贈与で決定処分した事案。</td>
         </tr>
         <tr>
-          <td>【10】</td>
+          <td class="bikou">【10】TKC</td>
           <td>H13.7.5</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -199,23 +237,29 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">2,099,117千円/1人</td>
+          <td class="price">1,464,830千円/1人</td>
+          <td class="price">219,186千円/1人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【11】</td>
-          <td>H12.5.12</td>
+          <td class="bikou">【11】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15838">H12.5.12</a></td>
           <td>大阪地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">4,133,067千円/6人</td>
+          <td class="price">2,727,991千円/6人</td>
+          <td class="price">386,854千円/6人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【12】</td>
+          <td class="bikou">【12】TKC</td>
           <td>H12.7.5</td>
           <td>前橋地裁</td>
           <td>株式等</td>
@@ -223,11 +267,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">841,101千円/4人</td>
+          <td class="price">274,629千円/4人</td>
+          <td class="price">38,817千円/4人</td>
+          <td class="bikou">調査中に修正申告を提出している。調査前（当初申告）と更正処分の差額で計算。</td>
         </tr>
         <tr>
-          <td>【13】</td>
+          <td class="bikou">【13】TKC</td>
           <td>H9.6.23</td>
           <td>大津地裁</td>
           <td>株式等</td>
@@ -235,11 +282,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">1,029,341千円/6人</td>
+          <td class="price">543,895千円/6人</td>
+          <td class="price">76,812千円/6人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【14】</td>
+          <td class="bikou">【14】TKC</td>
           <td>H12.5.30</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -247,11 +297,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">4,687,129千円/1人</td>
+          <td class="price">3,273,055千円/1人</td>
+          <td class="price">490,958千円/1人</td>
+          <td class="bikou">無申告に対して相法７条みなし贈与課税。<br>贈与があった平成３年当時は現在よりかなり税率が高い。</td>
         </tr>
         <tr>
-          <td>【15】</td>
+          <td class="bikou">【15】TKC</td>
           <td>H13.11.2</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -259,47 +312,59 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">665,673千円/1人</td>
+          <td class="price">458,036千円/1人</td>
+          <td class="price">68,147千円/1人</td>
+          <td class="bikou">平成３年贈与無申告に対して相法７によりみなし贈与課税。</td>
         </tr>
         <tr>
-          <td>【16】</td>
-          <td>H12.2.29</td>
+          <td class="bikou">【16】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15897">H12.2.29</a></td>
           <td>大阪地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">410,834千円/3人</td>
+          <td class="price">256,095千円/3人</td>
+          <td class="price">38,489千円/3人</td>
+          <td class="bikou">各金額は課税庁主張と平成５年当時の税率から推定。<br>多額の融資を行い、税理士が主宰する日本スリーエスという法人に少数株主として出資することで、<br>配当還元方式により評価額を80分の１から450分の１ほどに圧縮でき、反対に多額の債務を計上できるが、<br>純資産価額での買取を保証されているため資産価値を損なわないまま課税価格のみを極端に圧縮するスキーム。<br>無から負債を生み出せるが、納税者は訴訟全敗しているので結果ほぼ詐欺。</td>
         </tr>
         <tr>
-          <td>【17】</td>
-          <td>H12.2.29</td>
+          <td class="bikou">【17】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15898">H12.2.29</a></td>
           <td>大阪地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">1,244,791千円/2人</td>
+          <td class="price">871,353千円/2人</td>
+          <td class="price">不明 千円/2人</td>
+          <td class="bikou">金額は推定。<br>多分上記事案と同一の事件に係る別の納税者集団。<br>（同一の事件という表現があっているかは分からないが、同じコンサルや法人が噛んでいる同一スキーム。）<br>TKCだと同一人物に「長男」「次男」両方の表記がされており、相続人数がよく分からない。</td>
         </tr>
         <tr>
-          <td>【18】</td>
-          <td>H12.2.23</td>
+          <td class="bikou">【18】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15905">H12.2.23</a></td>
           <td>大阪地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">2,000,252千円/4人</td>
+          <td class="price">1,348,548千円/4人</td>
+          <td class="price">202,123千円/4人</td>
+          <td class="bikou">多分上記事案と同一の事件に係る別の納税者集団。</td>
         </tr>
         <tr>
-          <td>【19】</td>
+          <td class="bikou">【19】TKC</td>
           <td>H11.9.29</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -307,11 +372,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">1,195,286千円/4人</td>
+          <td class="price">498,140千円/4人</td>
+          <td class="price">14,203千円/4人</td>
+          <td class="bikou">多分上記事案と同一の事件に係る別の納税者集団。</td>
         </tr>
         <tr>
-          <td>【20】</td>
+          <td class="bikou">【20】TKC</td>
           <td>H11.9.29</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -319,11 +387,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">625,704千円/2人</td>
+          <td class="price">419,730千円/2人</td>
+          <td class="price">62,908千円/2人</td>
+          <td class="bikou">多分上記事案と同一の事件に係る別の納税者集団。</td>
         </tr>
         <tr>
-          <td>【21】</td>
+          <td class="bikou">【21】TKC</td>
           <td>H11.10.25</td>
           <td>横浜地裁</td>
           <td>株式等</td>
@@ -331,11 +402,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td></td>
+          <td class="price">465,718千円/2人</td>
+          <td class="price">115,158千円/2人</td>
+          <td class="price">16,685千円/2人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【22】</td>
+          <td class="bikou">【22】TKC</td>
           <td>H11.3.25</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -343,35 +417,44 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">2,684,967千円/4人</td>
+          <td class="price">1,582,910千円/4人</td>
+          <td class="price">214,405千円/4人</td>
+          <td class="bikou">多分【16】とかと同一の事件に係る別の納税者集団。</td>
         </tr>
         <tr>
-          <td>【23】</td>
-          <td>H12.3.27</td>
+          <td class="bikou">【23】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15872">H12.3.27</a></td>
           <td>千葉地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">1,397,292千円/1人</td>
+          <td class="price">956,200千円/1人</td>
+          <td class="price">144,072千円/1人</td>
+          <td class="bikou">多分上記事案と同一の事件に係る別の納税者集団。</td>
         </tr>
         <tr>
-          <td>【24】</td>
-          <td>H12.2.23</td>
+          <td class="bikou">【24】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=15906">H12.2.23</a></td>
           <td>大阪地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">566,000千円/4人</td>
+          <td class="price">141,500千円/4人</td>
+          <td class="price">14,939千円/4人</td>
+          <td class="bikou">多分上記事案と同一の事件に係る別の納税者集団。</td>
         </tr>
         <tr>
-          <td>【25】</td>
+          <td class="bikou">【25】TKC</td>
           <td>H11.12.13</td>
           <td>神戸地裁</td>
           <td>株式等</td>
@@ -379,11 +462,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">472,419千円/3人</td>
+          <td class="price">66,969千円/3人</td>
+          <td class="price">不明 千円/3人</td>
+          <td class="bikou">金額はかなり概算。<br>上記事件とは異なる手法（Ａ社Ｂ社方式）だが、スリーエムが関わっている。</td>
         </tr>
         <tr>
-          <td>【26】</td>
+          <td class="bikou">【26】TKC</td>
           <td>H9.9.30</td>
           <td>東京地裁</td>
           <td>土地</td>
@@ -391,11 +477,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">50,166千円/6人</td>
+          <td class="price">12,257千円/6人</td>
+          <td class="price">1,224千円/6人</td>
+          <td class="bikou">６項適用事案で最も増差税額が少ないのはこの事案か？</td>
         </tr>
         <tr>
-          <td>【27】</td>
+          <td class="bikou">【27】TKC</td>
           <td>H10.9.29</td>
           <td>東京地裁</td>
           <td>株式等</td>
@@ -403,23 +492,29 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td></td>
+          <td class="price">406,755千円/6人</td>
+          <td class="price">199,625千円/6人</td>
+          <td class="price">27,913千円/6人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【28】</td>
-          <td>H7.7.20</td>
+          <td class="bikou">【28】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=16352">H7.7.20</a></td>
           <td>東京地裁</td>
           <td>株式等</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>贈与</td>
+          <td class="price">221,340千円/2人</td>
+          <td class="price">138,228千円/2人</td>
+          <td class="price">20,684千円/2人</td>
+          <td class="bikou"></td>
         </tr>
         <tr>
-          <td>【29】</td>
+          <td class="bikou">【29】TKC</td>
           <td>H5.2.16</td>
           <td>東京地裁</td>
           <td>土地建物</td>
@@ -427,11 +522,14 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">4,568,611千円/2人</td>
+          <td class="price">3,198,027千円/2人</td>
+          <td class="price">不明 千円/2人</td>
+          <td class="bikou">計算不能な部分が多く、控えめに推計。</td>
         </tr>
         <tr>
-          <td>【30】</td>
+          <td class="bikou">【30】TKC</td>
           <td>H4.3.11</td>
           <td>東京地裁</td>
           <td>マンション</td>
@@ -439,23 +537,29 @@
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">626,793千円/4人</td>
+          <td class="price">313,397千円/4人</td>
+          <td class="price">不明 千円/4人</td>
+          <td class="bikou">概算。</td>
         </tr>
         <tr>
-          <td>【31】</td>
-          <td>H5.3.15</td>
+          <td class="bikou">【31】裁判所HP</td>
+          <td><a href="https://www.courts.go.jp/app/hanrei_jp/detail5?id=16521">H4.7.29</a></td>
           <td>東京地裁</td>
           <td>土地</td>
           <td>評価通達</td>
           <td>評価通達以外</td>
           <td>評価通達以外</td>
           <td>勝訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td>相続</td>
+          <td class="price">1,539,978千円/n人</td>
+          <td class="price">約 700,000千円/n人</td>
+          <td class="price">不明 千円/n人</td>
+          <td class="bikou">相続人の人数不明。</td>
         </tr>
         <tr>
-          <td>【32】</td>
+          <td class="bikou">【32】TKC</td>
           <td>S53.9.27</td>
           <td>東京地裁</td>
           <td>土地</td>
@@ -463,11 +567,13 @@
           <td>評価通達以外</td>
           <td>評価通達</td>
           <td>敗訴</td>
-          <td>千円</td>
-          <td>千円</td>
+          <td></td>
+          <td class="price">23,617千円/6人</td>
+          <td class="price">13,670千円/6人</td>
+          <td class="price">804千円/6人</td>
+          <td class="bikou"></td>
         </tr>
 
-        <!-- 以下、【2】〜【32】まで同様に行追加 -->
       </tbody>
     </table>
   </div>
