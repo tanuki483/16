@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>テスト対策資料</title>
+  <style>
+    body {
+      font-family: "Times New Roman", "游明朝", "Yu Mincho", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9fdfb;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #1d3b29;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .toc {
+      background: #d4ede0;
+      padding: 1.5em;
+      border: 1px solid #aacdba;
+      border-radius: 8px;
+      margin-bottom: 2em;
+    }
+
+    .toc ul {
+      list-style-type: none;
+      padding-left: 1em;
+    }
+
+    .toc ul li {
+      margin-bottom: 0.5em;
+    }
+
+    section {
+      background-color: #e4f3ec;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 10px;
+      border: 1px solid #c0e2d3;
+    }
+
+.answer-box {
+  background-color: #fff;       /* 白背景 */
+  border: 3px solid #444;       /* 太めの枠線（3px） */
+  border-top: none;             /* 上線は下で調整 */
+  padding: 1em;
+  margin: 0;
+}
+
+.answer-box:first-of-type {
+  border-top: 3px solid #444;   /* 最初の回答欄に上の太線 */
+}
+
+
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+      background-color: #fff;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 0.6em;
+    }
+
+    .left-align td, .left-align th {
+      text-align: left;
+    }
+
+    .center-align td, .center-align th {
+      text-align: center;
+    }
+
+    .right-align td, .right-align th {
+      text-align: right;
+    }
+
+    .double-border td {
+      border-top: 3px double #444;
+    }
+
+    svg {
+      display: block;
+      margin: 1em 0;
+      max-width: 100%;
+      background: #fff;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      padding: 0.5em;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin: 0.5em 0 1.5em 0;
+      font-size: 0.9em;
+      color: #0077cc;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .toc, section {
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="top">テスト対策資料</h1>
+
+  <nav class="toc">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#r5">令和5年</a>
+        <ul>
+          <li><a href="#r5-q1">第1問</a></li>
+          <li><a href="#r5-q2">第2問</a></li>
+          <li><a href="#r5-q3">第3問</a></li>
+          <li><a href="#r5-q4">第4問</a></li>
+          <li><a href="#r5-q5">第5問</a></li>
+        </ul>
+      </li>
+      <li><a href="#r4">令和4年</a>
+        <ul>
+          <li><a href="#r4-q1">第1問</a></li>
+          <li><a href="#r4-q2">第2問</a></li>
+          <li><a href="#r4-q3">第3問</a></li>
+          <li><a href="#r4-q4">第4問</a></li>
+          <li><a href="#r4-q5">第5問</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 令和5年 -->
+  <section id="r5">
+    <h2>令和5年</h2>
+    <a href="#top" class="back-to-top">🔝目次へ</a>
+
+    <section id="r5-q1">
+      <h3>第1問</h3>
+      <a href="#top" class="back-to-top">🔝目次へ</a>
+      <p>問題文……</p>
+
+      <!-- SVG挿入例 -->
+      <svg width="200" height="100">
+        <rect width="200" height="100" style="fill:lightblue;stroke:black;stroke-width:2" />
+        <text x="100" y="55" font-size="20" text-anchor="middle" dominant-baseline="middle">SVG例</text>
+      </svg>
+
+      <!-- 表挿入例 -->
+      <table class="center-align">
+        <tr>
+          <th>項目</th>
+          <th>値</th>
+        </tr>
+        <tr>
+          <td>例1</td>
+          <td>100</td>
+        </tr>
+        <tr class="double-border">
+          <td>例2</td>
+          <td>200</td>
+        </tr>
+      </table>
+
+      <!-- 回答欄 -->
+      <div class="answer-box"></div>
+      <div class="answer-box"></div>
+      <div class="answer-box"></div>
+      <div class="answer-box"></div>
+    </section>
+
+    <section id="r5-q2"><h3>第2問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r5-q3"><h3>第3問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r5-q4"><h3>第4問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r5-q5"><h3>第5問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+  </section>
+
+  <!-- 令和4年 -->
+  <section id="r4">
+    <h2>令和4年</h2>
+    <a href="#top" class="back-to-top">🔝目次へ</a>
+
+    <section id="r4-q1"><h3>第1問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r4-q2"><h3>第2問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r4-q3"><h3>第3問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r4-q4"><h3>第4問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+    <section id="r4-q5"><h3>第5問</h3><a href="#top" class="back-to-top">🔝目次へ</a><p>問題文……</p></section>
+  </section>
+
+</body>
+</html>
